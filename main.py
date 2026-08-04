@@ -54,4 +54,6 @@ async def multiply(num: Numbers):
 class LogarithmRequest(BaseModel):
     number: float
     base: float
-
+@api_router.get("/hello")
+async def hello():
+    return {"message": "Hello from main"}
